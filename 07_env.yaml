@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-demo
+  labels:
+    name: env-demo
+    purpose: demo-env
+spec:
+  - name: nginx
+    image: nginx
+    env:
+      - name: COURSE
+        value: devsecops
+      - name: TRAINER
+        value: siva sir
