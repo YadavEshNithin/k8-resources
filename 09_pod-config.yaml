@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  name: pod-config
   labels:
     purpose: config_demo
 spec:
