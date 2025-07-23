@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: ConfigMap-pod
+  name: pod-config-ref
   labels:
     purpose: config_reference-here
 data:
