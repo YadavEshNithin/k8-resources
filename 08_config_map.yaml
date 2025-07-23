@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ConfigMap-pod
+  labels:
+    purpose: config_reference-here
+data:
+  COURSE: "devsecops"
+  TRAINER: "siva sir"
+  DURATION: "100hrs"
