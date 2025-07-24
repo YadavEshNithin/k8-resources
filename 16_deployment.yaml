@@ -22,4 +22,4 @@ spec:
         # - name: nginx
         #   image: nginx
         - name: nginx-mini
-          image: stable-alpine
+          image: stable-perl
