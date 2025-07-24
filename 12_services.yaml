@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx_service
+  name: nginx-service
   labels:
     purpose: service_demo
 spec:
@@ -19,7 +19,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: nginx_pod
+  name: nginx-pod
   labels:
     purpose: service_demo
     project: roboshop
