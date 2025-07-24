@@ -17,7 +17,7 @@ spec:
         purpose: nginx-demo-rs
         project: roboshop
         environment: dev
-  spec:
-    containers:
-      - name: nginx
-        image: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
