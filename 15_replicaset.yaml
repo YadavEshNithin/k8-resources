@@ -13,10 +13,10 @@ spec:
       environment: dev
   template:
     metadata: 
-    labels:
-      purpose: nginx-demo-rs
-      project: roboshop
-      environment: dev
+      labels:
+        purpose: nginx-demo-rs
+        project: roboshop
+        environment: dev
   spec:
     containers:
       - name: nginx
