@@ -26,5 +26,6 @@ metadata:
     project: roboshop
     environment: dev
 spec:
+  containers:
   - name: nginx
     image: nginx
