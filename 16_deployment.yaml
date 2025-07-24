@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    purpose: nginx-demo-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      purpose: nginx-demo-deployment
+      project: roboshop
+      environment: dev
+  template:
+    metadata: 
+      labels:
+        purpose: nginx-demo-deployment
+        project: roboshop
+        environment: dev
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+        # - name: nginx-mini
+        #   image: stable-alpine
