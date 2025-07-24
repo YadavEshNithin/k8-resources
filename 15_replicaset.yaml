@@ -19,7 +19,6 @@ spec:
         environment: dev
     spec:
       containers:
-        # - name: nginx
-          # image: nginx
-        - name: nginx-mini
-          image: stable-alpine
+        - name: nginx
+          image: nginx
+        
