@@ -5,7 +5,7 @@ metadata:
   labels:
     purpose: service-lb-demo
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     purpose: service-lb-demo
     project: roboshop
