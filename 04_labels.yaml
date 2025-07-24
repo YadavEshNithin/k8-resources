@@ -7,6 +7,7 @@ metadata:
     tier: backend
     environment: dev
     component: mysql
+    purpose: service_demo
 spec:
   containers:
     - name: nginx
