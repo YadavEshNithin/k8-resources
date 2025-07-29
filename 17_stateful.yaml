@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-svc-headless
+  labels:
+    purpose: service_demo
+    project: roboshop
+    environment: dev
 spec:
   selector:
     purpose: service_demo
@@ -26,7 +30,7 @@ spec:
     project: roboshop
     environment: dev
   ports:  
-    port: 80
+  - port: 80
     name: web
 
 ---
