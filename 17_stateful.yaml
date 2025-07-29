@@ -9,9 +9,8 @@ spec:
     environment: dev
   clusterIP: None  # This makes the service headless
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
+    - port: 80
+      name: web
 
 ---
 
@@ -26,10 +25,6 @@ spec:
     purpose: service_demo
     project: roboshop
     environment: dev
-  # ports:
-  #   - protocol: TCP
-  #     port: 80
-  #     targetPort: 80
   ports:  
     port: 80
     name: web
@@ -39,7 +34,7 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: web
+  name: nginx-statefulset
 spec:
   selector:
     matchLabels:
