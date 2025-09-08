@@ -34,7 +34,8 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: roboshop-nginx
+  # name: roboshop-nginx
+  name: roboshop-nginx-one
   labels:
     purpose: service-efs-demo
     project: roboshop
