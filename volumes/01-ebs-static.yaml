@@ -6,11 +6,12 @@ spec:
   accessModes:
   - ReadWriteOnce
   capacity:
-    storage: 20Gi
+    storage: 10Gi
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-00a02af0025fc256f
+    # volumeHandle: vol-00a02af0025fc256f
+    volumeHandle: vol-04208e096f51a0002
 
 
 ---
@@ -26,6 +27,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
+      # storage: 15Gi
       storage: 15Gi
 
 ---
@@ -40,7 +42,8 @@ metadata:
     environment: dev
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+    # topology.kubernetes.io/zone: us-east-1c
+    topology.kubernetes.io/zone: us-east-1d
   containers:
   - name: nginx
     image: nginx
