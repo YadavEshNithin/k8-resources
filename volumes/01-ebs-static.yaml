@@ -28,7 +28,7 @@ spec:
   resources:
     requests:
       # storage: 15Gi
-      storage: 15Gi
+      storage: 5Gi
 
 ---
 
